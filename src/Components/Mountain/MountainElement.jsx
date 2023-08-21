@@ -80,6 +80,8 @@ export const ImageSwitch = styled.div`
     width: 100%;
     font-family: 'Oswald', sans-serif;
     
+    
+    
     .Adjust {
         padding: 3px;
         word-spacing: 10px;
@@ -89,32 +91,31 @@ export const ImageSwitch = styled.div`
         text-transform: uppercase;
         color: #b0b4be;
         
+        
         .Mountain1 {
-
+        text-decoration: none;
         color: inherit;
 
-         &:focus {
-         color:  #414f6b;
+         &:target {
+         color:#414f6b;
          background-color:#b0b4be;
          padding: 3px;
-         cursor: pointer;
          text-decoration: underline;
-         text-underline-offset: 4px;
+         text-underline-offset: 3px;
             }
         }
         
 
        .Mountain2 {
-
         color: inherit;
+        text-decoration: none;
 
         &:target {
          color:  #414f6b;
          background-color:#b0b4be;
          padding: 3px;
-         cursor: pointer;
          text-decoration: underline;
-         text-underline-offset: 4px;
+         text-underline-offset: 3px;
             }
         }
     }

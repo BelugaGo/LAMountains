@@ -49,8 +49,8 @@ function Mountain() {
         <MountainImage src={currentImage} />
         <ImageSwitch>
           <div className='Adjust'>
-            <a className='Mountain1' href='#target1' id='target1' onClick={() => { handleMountainChange('Photos/Mountain2.jpg'); handleCardInfo(false); }}>Mountian1</a>
-            <a className='Mountain2' href='#target2' id='target2' onClick={() => { handleMountainChange('Photos/Mountain3.jpg'); handleCardInfo(true); }}>Mountain2</a>
+            <a className='Mountain1' href='#target1' id='target1' onClick={() => { handleMountainChange('Photos/Mountain2.jpg'); handleCardInfo(false); }}> Mountain1</a>
+            <a className='Mountain2' href='#target2' id='target2' onClick={() => { handleMountainChange('Photos/Mountain3.jpg'); handleCardInfo(true); }}> Mountain2</a>
           </div>
         </ImageSwitch>
         <Dates id='team'>

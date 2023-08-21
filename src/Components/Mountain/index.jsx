@@ -17,6 +17,13 @@ function Mountain() {
     // Got assistance from chatgpt on toggling different elements onClick
   const [currentImage, setCurrentImage] = useState('Photos/Mountain2.jpg');
   const [showCardInfo2, setShowCardInfo2] = useState(false);
+  const [expanded, setExpanded] = useState('panel1');
+
+
+   //copied accordion toggle from material ui accordian
+  const handleExpand = (panel) => (e, isExpanded) => { 
+       setExpanded(isExpanded ? panel : false);
+  }
 
   const handleCardInfo = (toggle) => {
     setShowCardInfo2(toggle)
@@ -44,7 +51,7 @@ function Mountain() {
     }
   });
   return (
-    <>
+    <div id='team'>
       <MountainBox>
         <MountainImage src={currentImage} />
         <ImageSwitch>
@@ -53,7 +60,7 @@ function Mountain() {
             <a className='Mountain2' href='#target2' id='target2' onClick={() => { handleMountainChange('Photos/Mountain3.jpg'); handleCardInfo(true); }}> Mountain2</a>
           </div>
         </ImageSwitch>
-        <Dates id='team'>
+        <Dates>
           <Title>Schedule</Title>
           <div id='switch'>
             {showCardInfo2 ? CardInfo2 : CardInfo1}
@@ -63,10 +70,10 @@ function Mountain() {
 
 
 {/*
-Outside source ( Accordian - https://mui.com/material-ui/react-accordion/ )
+Outside source ( Accordion - https://mui.com/material-ui/react-accordion/ )
 */}
       <ThemeProvider theme={theme}>
-        <Accordion sx={{ display: { md: 'none' }, overflow: 'hidden', backgroundColor: '#414f6b' }}>
+        <Accordion expanded={expanded === 'panel1'} onChange={handleExpand('panel1')} sx={{ display: { md: 'none' }, overflow: 'hidden', backgroundColor: '#414f6b' }}>
           <AccordionSummary>
             <Typography className='Mountain1' style={{ textTransform: 'uppercase', textDecoration: 'underline' }}>Mountain 1</Typography>
           </AccordionSummary>
@@ -83,7 +90,7 @@ Outside source ( Accordian - https://mui.com/material-ui/react-accordion/ )
 
 
 
-        <Accordion sx={{ display: { md: 'none' }, overflow: 'hidden', backgroundColor: '#b0b4be' }}>
+        <Accordion expanded={expanded === 'panel2'} onChange={handleExpand('panel2')} sx={{ display: { md: 'none' }, overflow: 'hidden', backgroundColor: '#b0b4be' }}>
           <AccordionSummary>
             <Typography style={{ textTransform: 'uppercase', textDecoration: 'underline' }}>Mountain 2</Typography>
           </AccordionSummary>
@@ -98,7 +105,7 @@ Outside source ( Accordian - https://mui.com/material-ui/react-accordion/ )
           </AccordionDetails>
         </Accordion>
       </ThemeProvider>
-    </>
+    </div>
   )
 }
 

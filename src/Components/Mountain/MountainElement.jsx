@@ -32,6 +32,9 @@ export const Dates = styled.div`
      width: 352px;
      height: 229px;
      position: absolute;
+     box-shadow: 10px 10px 79px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 79px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 79px 0px rgba(0,0,0,0.75);
     
 
      @media screen and (max-width:670px) {

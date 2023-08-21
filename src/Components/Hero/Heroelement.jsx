@@ -23,36 +23,32 @@ export const IconAndNavWrapper = styled.div`
   position: absolute;
   align-items: center;
   justify-content: space-around;
+  gap: 8rem;
   width: 90%;
   height: min-content;
 `;
 
 export const History = styled.a`
     color: inherit;
-    transition: all .5s ease-in-out;
-
-    &:hover {
-     transform: scale(0.9);
-     
-    }
 `;
 
 export const Team = styled.a`
-    color: inherit;
-    transition: all .5s ease-in-out;
-
-    &:hover {
-    transform: scale(0.9); 
-    }
+    color: inherit; 
 `;
 
 export const HandTeamNav = styled.div`
     display: flex;
-    gap: 30px;
-    font-size: 15px;
+    gap: 20px;
+    font-size: 1.4vh;
     font-family: 'Lato', sans-serif;
     color: #fefeff;
     letter-spacing: 1.0px;
     word-spacing: 1.5px;
     text-underline-offset: 4px;
+
+    @media screen and (max-width:480px) {
+      font-size: 10px;
+      gap: 25px;
+
+    }
 `;

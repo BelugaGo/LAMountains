@@ -84,7 +84,7 @@ Outside source ( Accordion - https://mui.com/material-ui/react-accordion/ )
                 {CardInfo1}
               </div>
             </Dates>
-            <img src='Photos/Mountain2.jpg' style={{ width: '100%' }} />
+            <img src='Photos/Mountain2.jpg' alt='Mountain2' style={{ width: '100%' }} />
           </AccordionDetails>
         </Accordion>
 
@@ -101,7 +101,7 @@ Outside source ( Accordion - https://mui.com/material-ui/react-accordion/ )
                 {CardInfo2}
               </div>
             </Dates>
-            <img src='Photos/Mountain3.jpg' style={{ width: '100%' }} />
+            <img src='Photos/Mountain3.jpg' alt='Mountain3' style={{ width: '100%' }} />
           </AccordionDetails>
         </Accordion>
       </ThemeProvider>
@@ -109,4 +109,4 @@ Outside source ( Accordion - https://mui.com/material-ui/react-accordion/ )
   )
 }
 
-export default Mountain;
+export default Mountain; 

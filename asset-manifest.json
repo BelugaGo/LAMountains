@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/LAMountains/static/css/main.12afd893.css",
+    "main.js": "/LAMountains/static/js/main.e526ba41.js",
+    "index.html": "/LAMountains/index.html",
+    "main.12afd893.css.map": "/LAMountains/static/css/main.12afd893.css.map",
+    "main.e526ba41.js.map": "/LAMountains/static/js/main.e526ba41.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.12afd893.css",
+    "static/js/main.e526ba41.js"
+  ]
+}

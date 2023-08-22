@@ -98,7 +98,7 @@ Outside source ( Accordion - https://mui.com/material-ui/react-accordion/ )
             <Dates id='team'>
               <Title>Schedule</Title>
               <div id='switch'>
-                {CardInfo1}
+                {CardInfo2}
               </div>
             </Dates>
             <img src='Photos/Mountain3.jpg' style={{ width: '100%' }} />

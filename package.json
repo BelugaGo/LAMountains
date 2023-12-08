@@ -1,5 +1,6 @@
 {
   "name": "testsite",
+  "homepage": "https://BelugaGo.github.io/LAMountains",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
